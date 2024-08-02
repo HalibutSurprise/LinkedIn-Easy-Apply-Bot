@@ -167,7 +167,7 @@ class EasyApplyBot:
             pw_field.send_keys(password)
             time.sleep(2)
             login_button.click()
-            time.sleep(15)
+            time.sleep(30)
             # if self.is_present(self.locator["2fa_oneClick"]):
             #     oneclick_auth = self.browser.find_element(by='id', value='reset-password-submit-button')
             #     if oneclick_auth is not None:
@@ -544,7 +544,7 @@ class EasyApplyBot:
             elif self.is_present(self.locator["text_select"]):
                pass
 
-            if "Yes" or "No" in answer: #radio button
+            if "yes" or "no" in answer.lower(): #radio button
                 try: #debug this
                     input = form.find_element(By.CSS_SELECTOR, "input[type='radio'][value={}]".format(answer))
                     form.execute_script("arguments[0].click();", input)
@@ -559,9 +559,15 @@ class EasyApplyBot:
     def ans_question(self, question): #refactor this to an ans.yaml file
         answer = None
         if "how many" in question:
+<<<<<<< Updated upstream
             answer = random.randint(3, 12)
         elif "experience" in question:
             answer = random.randint(3, 12)
+=======
+            answer = "4"
+        elif "experience" in question:
+            answer = "4"
+>>>>>>> Stashed changes
         elif "sponsor" in question:
             answer = "No"
         elif 'do you ' in question:

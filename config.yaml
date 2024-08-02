@@ -1,11 +1,12 @@
-username: <username>
-password: <password>
-phone_number: <phone_number>
+username: michael.w.smeeton@outlook.com
+password: DuncanHahaha12345
+phone_number: 4165744785
 
 profile_path: '' #can be empty, will default to 'C:\Users\<user>\AppData\Local\Google\Chrome\User Data\Default'
 
 
 positions:
+<<<<<<< Updated upstream
 - <position title 1>
 - <position title 2>
 - <position title 3>
@@ -13,19 +14,49 @@ positions:
 
 locations:
 - <state>
+=======
+- Planner
+- Software Engineer
+- Buyer
+- Analyst
+- Purchaser
+- Business Intelligence
+- Supply Chain
+- Developer
+- Master Data
+- IT
+- AI
+- Machine Learning
+
+
+locations:
+#- Ontario
+>>>>>>> Stashed changes
 - Remote
 
 salary: <yearly salary>
 rate: <hourly rate>
 # --------- Optional Parameters -------
 uploads:
+<<<<<<< Updated upstream
   Resume: 'C:\Users\<user>\Documents\resume.docx'
   Cover Letter: 'C:\Users\<user>\Documents\cover letter.docx'
+=======
+  Resume: C:/Users/Michael/Documents/Michael Smeeton Resume June 2024.docx
+  Cover Letter: C:/Users/Michael/Documents/Michael Smeeton Cover Letter June 2024.docx
+>>>>>>> Stashed changes
   #Photo: # PATH TO photo
 
 
 output_filename:
+<<<<<<< Updated upstream
 - # PATH TO OUTPUT FILE (default output.csv)
 
 # blacklist:
 # - # Company names you want to ignore
+=======
+- C:/Repos/LinkedIn-Easy-Apply-Bot/out.csv
+
+blacklist:
+- Coca-Cola
+>>>>>>> Stashed changes
